@@ -8,9 +8,7 @@ var p ={
     item : 0,
     cajaSlide: document.querySelector("#slide ul"),
     animacionSlide: "fade",
-    imgSlide: document.querySelectorAll("#slide ul li"),
-    avanzar:
-
+    imgSlide: document.querySelectorAll("#slide ul li")
 }
 
 
