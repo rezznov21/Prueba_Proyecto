@@ -20,7 +20,7 @@ var p ={
 
 
 /*
-OBJETO CON LOS METODOS DEL SLIDE
+OBJETO CON LOS METODOS DEL SLIDE///////////////////////////////////////
  */
 
 var m = {
@@ -30,11 +30,14 @@ var m = {
         for (var  i = 0; i < p.paginacion.length; i++) {
 
             p.paginacion[i].addEventListener("click", m.paginacionSlide)
+            p.imgSlide[i].style.width = (100/p.paginacion.length) + "%"
         }
 
         p.avanzar.addEventListener("click", m.avanzar)
         p.retroceder.addEventListener("click", m.retroceder)
         m.intervalo()
+
+        p.cajaSlide.style.width = (p.paginacion.length*100)+ "%"
     },
 
     paginacionSlide: function (item) {
